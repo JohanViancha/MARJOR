@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AdminLTE 3 | Log in</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+    <link rel="stylesheet" href="Vista/Plantilla/dist/css/adminlte.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="Vista/Plantilla/plugins/iCheck/square/blue.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <script src="https://www.google.com/recaptcha/api.js?render=6Lck9qMUAAAAAAkiDixOvJMWoMQwwcZm1CabBx7l"></script>
+</head>
+<body class="hold-transition login-page">
+
+<div class="login-box col-6">
+  <div class="login-logo">
+    <a href=""><b>MARJOR</b></a>
+  </div>
+  <!-- /.login-logo -->
+  <div class="card">
+    <div class="card-body login-card-body">
+
+      <form method="post" id="form-ingreso_sistema" name="form-ingreso_sistema" intentos_fall=0>
+        <!-- Campo de Correo electronico -->
+        <p class="text-center">Inicie sesión para ingresar al sistema</p>
+       <div class="input-group mb-3">
+          <div class="input-group-append">
+              <span class="input-group-text"><i class="far fa-envelope"></i></span>
+            </div>
+          <input type="text" class="form-control" id="email" name="email" required="">
+          
+        </div>
+        <!-- Campo de Contraseña-->
+       <div class="input-group mb-3">
+
+        <div class="input-group-append">
+              <span class="input-group-text"><i class="fas fa-key"></i></i></span>
+            </div>
+          <input type="password" class="form-control" id="password" style="border-left: 0px" name="password" required="">
+
+          <span id="ver_password"><i class="form-control input-group-text fas fa-eye-slash" style="background: rgb(232, 240, 254)"></i></span>
+            
+        </div>
+        <div class="row">
+          <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-12">
+            <div class="checkbox icheck">
+              <label>
+                <input type="checkbox"> Recordar usuario
+              </label>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12 pull-right">
+           <button class="btn btn btn-outline-info"><i class="fas fa-sign-in-alt"></i> Ingresar</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+      <!-- /.social-auth-links -->
+      <p class="mb-1 text-center pt-lg-4">
+        <a href="Vista/recuperar_password.php">Olvide mi contraseña</a>
+     </p>
+  
+    </div>
+    <!-- /.login-card-body -->
+  </div>
+ <div class="g-recaptcha" data-sitekey="6Lck9qMUAAAAAAkiDixOvJMWoMQwwcZm1CabBx7l"></div>
+
+</div>
+
+
+<script type="text/javascript">
+  
+
+  /*grecaptcha.ready(function() {
+      grecaptcha.execute('6Lck9qMUAAAAAAkiDixOvJMWoMQwwcZm1CabBx7l', {action: 'homepage'}).then(function(token) {
+         console.log(token);
+      });
+  });*/
+
+</script>
+
+
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="Vista/Plantilla/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="Vista/Plantilla/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+
+<!-- iCheck -->
+<script src="Vista/Plantilla/plugins/iCheck/icheck.min.js"></script>
+<script type="text/javascript" src="Vista/Script/login.js"></script>
+<script>
+  $(function () {
+    $('input').iCheck({
+      checkboxClass: 'icheckbox_square-blue',
+      radioClass   : 'iradio_square-blue',
+      increaseArea : '20%' // optional
+    })
+  })
+
+  if(!navigator.onLine){
+
+    alert("No estas conectado a una red de internet, estas offline");
+  }
+</script>
+</body>
+</html>

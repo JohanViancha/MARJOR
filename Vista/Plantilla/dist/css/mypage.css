@@ -1,0 +1,119 @@
+
+
+.contenedor_header{
+	background: #37198B;
+	height: 60px;
+}
+
+#logo_eslogan{
+
+	margin-left: 5%;
+	margin-right: 50%
+}
+
+#nombre{
+
+	float: left;
+	font-size: 40px;
+	color: white;
+}
+
+#frase{
+	float: left;
+	font-size: 15px;
+	color: white;
+	margin-top: 3%;
+	margin-left: 2%;
+	font-family: 'Verdana';
+}
+
+
+#buscar{
+	float: left;
+	margin-left: 550px;
+	margin-top: 1%;
+}
+
+.parpadeo_borde{
+
+  animation-name: par_borde;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 5;
+
+  -webkit-animation-name:par_borde;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 5;
+}
+
+
+@-webkit-keyframes par_borde {  
+  0% {border:3px solid #FF001A}
+  50% { border:3px solid #FF827E}
+   100% {border:3px solid white}
+}
+
+
+@-moz-keyframes par_borde{  
+  0% {border:3px solid #FF001A}
+  50% { border:3px solid #FF827E}
+   100% {border:3px solid white}
+}
+
+@-webkit-keyframes par_borde {  
+ 0% {border:3px solid #FF001A}
+  50% { border:3px solid #FF827E}
+   100% {border:3px solid white}
+}
+
+@keyframes par_borde {  
+ 0% {border:3px solid #FF001A}
+  50% { border:3px solid #FF827E}
+   100% {border:3px solid white}
+}
+
+
+
+
+
+
+
+.parpadeo_fondo{
+
+  animation-name: par_fondo;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:par_fondo;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+
+@-webkit-keyframes par_fondo {  
+  0% {background: #FF4141;color:white;}
+  50% {background:  #FF9F9C;color: white}
+   100% {background:  white}
+}
+
+
+@-moz-keyframes par_fondo{  
+  0% {background: #FF4141;color:white;}
+  50% {background:  #FF9F9C;color: white}
+   100% {background:  white}
+}
+
+@-webkit-keyframes par_fondo {  
+ 0% {background: #FF4141;color:white;}
+  50% {background:  #FF9F9C;color: white}
+   100% {background:  white}
+}
+
+@keyframes par_fondo {  
+0% {background: #FF4141;color:white;}
+  50% {background:  #FF9F9C;color: #0A0A0A}
+   100% {background:  }
+}
