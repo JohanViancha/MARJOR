@@ -366,7 +366,7 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`id_usuario`, `nombres`, `apellidos`, `tipo_documento`, `num_documento`, `telefono`, `celular`, `fecha_registro`, `confirmado`, `cambio_password`, `fecha_confirmacion`, `estado`, `correo_electronico`, `contrasena`, `cargo`, `foto`) VALUES
-(1, 'Johan', 'Viancha', '1', '1095842538', '6949796', '3123213432', '2020-01-26 20:55:18', 1, 1, '2020-01-26 20:55:18', '1', 'vianchajohan@gmail.com', '$2y$10$Ic8Y7JI3rLzX3gTVR5STyuMSpDoEyW1isCrCK/sSYhipP.kyuR/jW', 'Administrador', 'usuario_defecto.png'),
+(1, 'Johan', 'Viancha', '1', '1095844324', '6945322', '3123345334', '2020-01-26 20:55:18', 1, 1, '2020-01-26 20:55:18', '1', 'vianchajohan@gmail.com', '$2y$10$Ic8Y7JI3rLzX3gTVR5STyuMSpDoEyW1isCrCK/sSYhipP.kyuR/jW', 'Administrador', 'usuario_defecto.png'),
 (2, 'Ferney', 'Viancha', 'CC', '1935383', '6937224', '312523', '2020-03-18 19:59:28', 1, 1, '2020-03-18 19:59:28', '1', 'johaanx-1234@hotmail.com', '$2y$10$Ic8Y7JI3rLzX3gTVR5STyuMSpDoEyW1isCrCK/sSYhipP.kyuR/jW', 'Administrador', 'usuario_defecto.png');
 
 -- --------------------------------------------------------
